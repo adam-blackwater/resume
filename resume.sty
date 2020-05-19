@@ -1,0 +1,36 @@
+\pagenumbering{gobble}
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+}
+
+\newcommand\topheading[6]{
+        \noindent{\Huge{#1}} \vspace{0.2em} \\ 
+        #2 \hspace{0.3em} $\bullet$ \hspace{0.3em} #3 $\bullet$ \hspace{0.3em} #4 \\
+        #5 \hspace{0.3em} $\bullet$ \hspace{0.3em} #6
+}
+
+\newcommand\statement[2]{
+        \noindent{\textbf{#1}\vspace{0.25em}\\}
+        \begin{minipage}{0.95\textwidth}
+                \vspace{0.25em}
+                \hspace{1.2em}
+                \parbox{0.90\textwidth}{#2}
+        \end{minipage}
+}
+
+\newcommand\headedsection[3]{
+        \noindent{\textbf{#1}\vspace{0.25em}\par}
+        #2\\
+        \content{#3}
+}
+
+\newcommand\content[1]{
+        \begin{minipage}{0.95\textwidth}
+                \vspace{0.25em}
+                \hspace{3em}
+                \parbox{0.90\textwidth}{#1}
+        \end{minipage}
+}
